@@ -1,0 +1,29 @@
+node_modules/
+
+Internship-project/.env
+
+# Build outputs
+front/dist/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+/logs
+.env
+*.json
+
+node_modules/
+front/node_modules/
+Internship-project/node_modules/

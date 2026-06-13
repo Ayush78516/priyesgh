@@ -1,0 +1,14 @@
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+@source "../../index.html";
+@source "../**/*.{js,jsx,ts,tsx}";
+
+@theme {
+  --color-primary: #002b5b;
+  --color-accent-teal: #00a6a6;
+  --color-soft-bg: #f2f9ff;
+  --color-highlight: #38b6ff;
+  --color-text-dark: #012a4a;
+  --color-light-gray: #e8f4f8;
+}
