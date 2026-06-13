@@ -22,7 +22,6 @@ yarn-error.log*
 Thumbs.db
 /logs
 .env
-*.json
 
 node_modules/
 front/node_modules/

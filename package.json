@@ -1,0 +1,30 @@
+{
+  "name": "internship-root",
+  "version": "1.0.0",
+  "description": "Root folder for internship project",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix front && npm install --prefix Internship-project",
+    "build:front": "npm run build --prefix front",
+    "front-build": "npm run build --prefix front",
+    "backend": "npm start --prefix Internship-project",
+    "dev": "npm run backend",
+    "build": "npm run install:all && npm run build:front",
+    "deploy:prepare": "npm install --prefix front && npm run build:front",
+    "start": "npm run backend",
+    "pm2:start": "pm2 start ecosystem.config.cjs --env production",
+    "pm2:restart": "pm2 restart covforum",
+    "pm2:reload": "pm2 reload covforum",
+    "pm2:stop": "pm2 stop covforum",
+    "pm2:delete": "pm2 delete covforum",
+    "pm2:logs": "pm2 logs covforum",
+    "pm2:save": "pm2 save"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "multer": "^2.1.1",
+    "vite": "^8.0.12"
+  }
+}
